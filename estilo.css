@@ -4,6 +4,7 @@
     padding: 0;
 } 
 
+
 :root{
     --textos: 'Dosis', sans-serif;
     --titulos: 'Playfair Display', serif;
@@ -11,29 +12,8 @@
     --verde_claro: #69BF97;
 }
 
-.container ul{
-    padding: 10px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.container li{
-    padding: 50px 90px;
-}
-ul{
-    list-style: none;
-}
-.contenido h1{
-    font-family: var(--titulos);
-    color: var(--verde_oscuro);
-    padding: 0px 300px;
-    margin: 20px ;
-}
-.container p{
-    text-align: center;
-    font-family: var(--textos);
-    
-}
+
+
 /* aqui va el header */
 
 
