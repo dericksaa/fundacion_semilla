@@ -32,3 +32,83 @@
 
 /* estudiantes */
 
+.dip1_users_list{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.elem_dip1{
+    display:flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.user_numb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: var(--textos);
+    font-weight: 700;
+}
+
+.color1{
+    background-color: rgb(114, 130, 221);
+    color: white;
+}
+
+
+.color2{
+    background-color: rgba(28, 133, 141, 0.658);
+    color:white;
+ }
+
+.color3{
+    background-color: rgb(99, 15, 235);
+    color: white;
+}
+
+.color4{
+    background-color: rgb(228, 36, 132);
+    color: white;
+}
+
+.color5{
+    background-color: rgb(165, 122, 28);
+    color: white;
+}
+
+.user_name{
+    font-family: var(--textos);
+    font-size: 20px;
+}
+
+.col1{
+    color: rgb(85, 85, 241);
+}
+
+.col2{
+    color: rgba(28, 133, 141, 0.658);
+}
+
+.col3{
+    color:rgb(99, 15, 235) ;
+}
+
+.col4{
+    color:rgb(228, 36, 132) ;
+}
+
+.col5{
+    color:rgb(165, 122, 28);
+}
