@@ -21,7 +21,52 @@
 
 /* aqui va el footer */
 
+/*Elemento general del contenedor footer*/
+footer{
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    background: #22242A;
+    height: auto;
+    width:100%;
+}
 
+/*seccion de footer elemento de la clase*/
+.footer_C{
+    display: flex;
+    align-items: center;
+    align-content:center;
+    margin-left: 300px;
+}
+/*Seccion de footer elemento de tipografia y color*/
+.footer_C p{
+    font-family: var(--textos);
+    font-size: 14px;
+    color:#FFFFFF;
+}
+
+/*Elemento general de redes*/
+.Redes_C{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 500px;
+}
+
+/*Elemento de cada icon img en espedifico*/
+.Redes_C img{
+    width: 20px;
+    margin-left: 10px;
+    filter: invert(100%) sepia(34%) saturate(2%) hue-rotate(230deg) brightness(109%) contrast(101%);
+}
+
+/*Elemento de hover cambio de color de los iconos */
+.Redes_C img:hover{
+    filter: invert(66%) sepia(44%) saturate(338%) hue-rotate(100deg) brightness(94%) contrast(93%);
+}
 
 /**INDEX**/
 
