@@ -31,10 +31,12 @@
 }
 
 .frustracion{
+    margin: 30px 30px;
+
     width: 300px;
     border: 1px solid #ccc;
     padding: 10px;
-    font-family: var(--titulos);
+    font-family: var(--textos);
 }
 .frustracion h2{
     text-align: center;
@@ -51,6 +53,14 @@
     font-weight: bold;
     font-family: var(--textos);
 }
+@media(max-width:768px){
+    .frustracion{
+        width: 250px;
+        padding: 10px 20px;
+       
+    }
+}
+
 .marzo{
     
     background-color: #04aa6d;
