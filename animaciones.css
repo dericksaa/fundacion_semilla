@@ -117,10 +117,23 @@
 
 @keyframes cuatro {
     100%{
-        width: 70%;
+        width: 100%;
     }
 }
 
+/* quinto cuadrito */
+
+#cinco {
+    animation: quinto 1s forwards;
+    animation-delay: 4s;
+    background-color: green;
+}
+
+@keyframes quinto {
+    100%{
+        width: 100%;
+    }
+}
 
 
 /**FRUSTRACION**/
