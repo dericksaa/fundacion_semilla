@@ -5,8 +5,8 @@
 } 
 
 :root{
-    --textos: 'Dosis', sans-serif;
-    --titulos: 'Playfair Display', serif;
+    --titulos: 'Dosis', sans-serif;
+    --textos: 'Playfair Display', serif;
     --verde_oscuro: #009458;
     --verde_claro: #69BF97;
 }
@@ -17,11 +17,83 @@
 
 /* aqui va el menu*/
 
+/*Coloque posicion general en en el contenedor*/
+.menu_C{
+    width: 100px;
+    height: 580px;
+    background-color: #2F323A;
+}
+
+/*en la seccion del menu se colocaron elementos de iconos*/
+.menu_C img{
+    display:block;
+    align-items: center;
+    align-content: center;
+    padding: 16px;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+/*se  coloco animanion de hover en cuanto el usuario pase el curso mostrara cada seccion del menu de barra lateral*/
+.menu_C img:hover{
+    background-color: #69BF97;
+    width: 120px;
+    border: 1px;
+}
+
+
+/*Media queries de vaeln */
+
 
 
 /* aqui va el footer */
 
+/*Elemento general del contenedor footer*/
+footer{
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    background: #22242A;
+    height: auto;
+    width:100%;
+}
 
+/*seccion de footer elemento de la clase*/
+.footer_C{
+    display: flex;
+    align-items: center;
+    align-content:center;
+    margin-left: 100px;
+}
+/*Seccion de footer elemento de tipografia y color*/
+.footer_C p{
+    font-family: var(--textos);
+    font-size: 14px;
+    color:#FFFFFF;
+}
+
+/*Elemento general de redes*/
+.Redes_C{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 800px;
+}
+
+/*Elemento de cada icon img en espedifico*/
+.Redes_C img{
+    width: 20px;
+    margin-left: 10px;
+    filter: invert(100%) sepia(34%) saturate(2%) hue-rotate(230deg) brightness(109%) contrast(101%);
+}
+
+/*Elemento de hover cambio de color de los iconos */
+.Redes_C img:hover{
+    filter: invert(66%) sepia(44%) saturate(338%) hue-rotate(100deg) brightness(94%) contrast(93%);
+}
 
 /**INDEX**/
 
