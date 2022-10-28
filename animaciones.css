@@ -22,7 +22,71 @@
 
 
 /**FRUSTRACION**/
+.columna{
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-top: 400px;
+    left: -40px;
+}
 
+.frustracion{
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: var(--titulos);
+}
+.frustracion h2{
+    text-align: center;
+
+}
+.container{
+    width: 100%;
+    background-color: #ddd;
+}
+.mes{
+    text-align: right;
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+    font-family: var(--textos);
+}
+.marzo{
+    
+    background-color: #04aa6d;
+    animation: fillmarzo 2s forwards;
+}
+.junio{
+    
+    background-color: #2196f3;
+    animation: filljunio 2s forwards;
+}
+.agosto{
+    
+    background-color: #f4e736;
+    animation: fillagosto 2s forwards;
+}
+.noviembre{
+    
+    background-color: #f44336;
+    animation: fillnov 2s forwards;
+}
+@keyframes fillmarzo{
+    0%{width: 0;}
+    100%{width: 15%;}
+}
+@keyframes filljunio{
+    0%{width: 0;}
+    100%{width: 30%;}
+}
+@keyframes fillagosto{
+    0%{width: 0;}
+    100%{width: 55%;}
+}
+@keyframes fillnov{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
 
 /**MIEDO**/
 
