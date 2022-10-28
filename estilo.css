@@ -17,6 +17,33 @@
 
 /* aqui va el menu*/
 
+/*Coloque posicion general en en el contenedor*/
+.menu_C{
+    width: 100px;
+    height: 580px;
+    background-color: #2F323A;
+}
+
+/*en la seccion del menu se colocaron elementos de iconos*/
+.menu_C img{
+    display:block;
+    align-items: center;
+    align-content: center;
+    padding: 16px;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+/*se  coloco animanion de hover en cuanto el usuario pase el curso mostrara cada seccion del menu de barra lateral*/
+.menu_C img:hover{
+    background-color: #69BF97;
+    width: 120px;
+    border: 1px;
+}
+
+
+/*Media queries de vaeln */
+
 
 
 /* aqui va el footer */
