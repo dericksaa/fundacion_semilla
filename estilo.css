@@ -5,14 +5,60 @@
 } 
 
 :root{
-    --textos: 'Dosis', sans-serif;
-    --titulos: 'Playfair Display', serif;
+    --textos: 'Playfair Display', serif;
+    --titulos: 'Dosis', sans-serif;
     --verde_oscuro: #009458;
     --verde_claro: #69BF97;
 }
 
 /* aqui va el header */
+.o-container-header{
+    background-color: black;
+    color: #D9D9D9;
+    font-family: var(--titulos);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;    
+   
+}
 
+@media (min-width: 700px){
+    .o-navegacion{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .o-container-header h1{
+        display: none;
+    }
+}
+
+@media (max-width: 454px){
+    .o-container-header {
+        padding:20px 20px;
+        
+    }
+}
+
+
+.o-log-out{
+    font-family: var(--titulos);
+    background: #69BF97;
+    font-weight: bold;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+.o-container-header img{
+    width: 60px;
+
+}
+ 
 
 
 /* aqui va el menu*/
