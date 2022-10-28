@@ -42,7 +42,29 @@
 }
 
 
-/*Media queries de vaeln */
+/*Media queries de valen */
+
+@media screen and (max-width:708px){
+    body{
+        background-color: aqua;
+    }
+
+
+    .footer_C p{
+        display: flexbox;
+        font-family: var(--textos);
+        font-size: 5px;
+    }
+
+    .Redes_C img{
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        left:10px;
+    }
+
+}
 
 
 
@@ -54,8 +76,7 @@ footer{
     align-items: center;
     align-content:center ;
     background: #22242A;
-    height: auto;
-    width:100%;
+    width: auto;
 }
 
 /*seccion de footer elemento de la clase*/
@@ -75,7 +96,7 @@ footer{
 /*Elemento general de redes*/
 .Redes_C{
     list-style: none;
-    display: flex;
+    display: relative;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
