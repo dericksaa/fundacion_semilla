@@ -134,14 +134,19 @@ a{
 }
  
 
-
 /* aqui va el menu*/
+
+.contenido-menu{
+    display: flex;
+    
+
+}
 
 /*Coloque posicion general en en el contenedor*/
 .menu_C{
     width: 100px;
-    height: 580px;
-    background-color: #2F323A;
+    height: 100vh;
+    background-color: black;
 }
 
 /*en la seccion del menu se colocaron elementos de iconos*/
@@ -173,7 +178,7 @@ footer{
     display: flex;
     align-items: center;
     align-content:center ;
-    background: #22242A;
+    background: black;
     height: auto;
     width:100%;
 }
