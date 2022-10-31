@@ -16,6 +16,44 @@
 
 
 /**FOTO ESTUDIANTE**/
+.a_container{
+	padding: 30px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.a_img_perfil_anim{
+	width: 200px;
+	height: 200px;
+	box-sizing: border-box;
+	border: 1px white solid;
+	border-radius: 50%;
+	overflow: hidden; 
+	transform: translatey(0px);
+	animation: float 7s ease-in-out infinite ;
+}
+
+.a_img_perfil{
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 10px 0px rgba(0, 148, 88, 1);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 15px 10px 0px rgba(105, 191, 151, 1);
+		transform: translatey(15px);
+	}
+	100% {
+		box-shadow: 0 5px 10px 0px rgba(0, 148, 88, 1);
+		transform: translatey(0px);
+	}
+}
 
 
 /**INDICADOR GLOBAL**/
@@ -97,7 +135,146 @@
 }
 
 /**MIEDO**/
+.a_indicador_miedo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+}
+
+.a_termometro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+
+}
+
+.a_term1{
+	width:20px;
+	height:40px;
+	border: solid 2px;
+
+	overflow: hidden;
+	display:block;
+	z-index: 1;
+	position: relative;
+}
+
+.a_term1:before{
+	content:"";
+	transition: 2s;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	top:100%;
+	left: 0;
+  }
+
+.a_term1:hover::before{
+	background-color: rgb(45, 114, 24);
+	top:0;
+}
+
+.a_term2{
+	width:20px;
+	height:40px;
+	background-color: rgb(255, 238, 0);
+	border: solid 2px;
+}
+
+.a_term3{
+	width:20px;
+	height:40px;
+	background-color: rgb(255, 166, 0);
+	border: solid 2px;
+}
+
+.a_term4{
+	width:20px;
+	height:40px;
+	background-color: rgb(0, 183, 255);
+	border: solid 2px;
+}
+
+.a_term5{
+	width:20px;
+	height:40px;
+	background-color: blue;
+	border: solid 2px;
+}
+
+.a_term6{
+	width:20px;
+	height:40px;
+	background-color: blue;
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+	margin-top: -10px;
+	border: solid 2px;
+}
+
+.a_caritas{
+	display: flex;
+	flex-direction: column;
+	margin-top: -20px;
+}
+
+.a_cara1{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+	margin-top: 15px;
+	border: solid 3px;
+	background-color: rgb(45, 114, 24);
+}
+
+.a_tranqui{
+	display: none;
+}
+
+.a_cara1:hover + .a_tranqui {
+	display:flex;
+	flex-direction: unset;
+  }
+
+.a_cara2{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+	background-color: rgb(255, 238, 0);
+	margin-top: 15px;
+	border: solid 3px;
+}
+.a_cara3{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+	background-color: rgb(255, 166, 0);
+	margin-top: 15px;
+	border: solid 3px;
+}
+
+.a_cara4{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+	background-color: rgb(0, 183, 255);
+	margin-top: 15px;
+	border: solid 3px;
+}
+
+.a_cara5{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+	background-color: blue;
+	margin-top: 15px;
+	border: solid 3px;
+}
 
 /**ENOJO**/
 
