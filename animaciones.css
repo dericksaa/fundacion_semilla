@@ -216,10 +216,31 @@
 
 /**ENOJO**/
 
+.circulo_s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:200px;
+    border-right: 25px solid #d9534f;
+    border-top: 25px solid #428bca;
+    border-left: 25px solid #d9534f;
+    border-bottom: 25px solid #d9534f;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    transform: rotate(45deg);
+}
+
+.circulo_s p{
+    transform: rotate(-45deg);
+}
+
 
 /**TRISTEZA Y ALEGRIA**/
 
 .s_medidor{
+    width: 400px;
     padding: 30px 30px;
     position: relative;
     display: flex;
@@ -282,25 +303,7 @@
     font-size: 30px;
 }
 
-/* .circulo_s{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:200px;
-    height:200px;
-    border-right: 25px solid #d9534f;
-    border-top: 25px solid #428bca;
-    border-left: 25px solid #d9534f;
-    border-bottom: 25px solid #d9534f;
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-    transform: rotate(45deg);
-}
 
-.circulo_s p{
-    transform: rotate(-45deg);
-} */
 
 
 
