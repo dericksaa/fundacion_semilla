@@ -177,22 +177,25 @@ a{
 /* aqui va el footer */
 
 /*Elemento general del contenedor footer*/
-footer{
-    display: flex;
-    align-items: center;
-    align-content:center ;
-    background: black;
-    height: auto;
-    width:100%;
-}
+
 
 /*seccion de footer elemento de la clase*/
 .footer_C{
     display: flex;
+    justify-content: space-around;
     align-items: center;
     align-content:center;
-    margin-left: 100px;
+    background: black;
+    width:100%;
+    padding: 30px 0px;
 }
+
+@media (max-width: 425px){
+    .footer_C{
+        flex-direction: column-reverse;
+    }
+}
+
 /*Seccion de footer elemento de tipografia y color*/
 .footer_C p{
     font-family: var(--textos);
@@ -206,9 +209,13 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 800px;
+    padding-bottom: 0px;
+}
+
+@media (max-width: 425px){
+    .Redes_C{
+        padding-bottom: 10px;
+    }
 }
 
 /*Elemento de cada icon img en espedifico*/
