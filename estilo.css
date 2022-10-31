@@ -10,8 +10,12 @@
     --verde_oscuro: #009458;
     --verde_claro: #69BF97;
 }
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
 .container{
-    width: -100px;
+    width: 1350px;
 }
 .container ul{
     padding: 10px 30px;
