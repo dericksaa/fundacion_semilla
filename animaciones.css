@@ -6,8 +6,8 @@
 } 
 
 :root{
-    --textos: 'Dosis', sans-serif;
-    --titulos: 'Playfair Display', serif;
+    --titulos: 'Dosis', sans-serif;
+    --textos: 'Playfair Display', serif;
     --verde_oscuro: #009458;
     --verde_claro: #69BF97;
 }
@@ -19,6 +19,121 @@
 
 
 /**INDICADOR GLOBAL**/
+
+.s_indi_global{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s_indi_global h2{
+    font-family: var(--titulos);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.s_indi_global h3{
+    font-family: var(--titulos);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.s_global{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 34px 0px;
+}
+
+.s_contenedor{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+}
+
+.s_contenedor div {
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.s_contenedor div img {
+    width: 60%;
+}
+
+/* primer cuadrito */
+
+#uno {
+    animation: uno 1s forwards;
+    background-color: palevioletred;
+}
+
+@keyframes uno {
+    100%{
+        width: 100%;
+    }
+}
+
+/* segundo cuadrito */
+
+#dos {
+    animation: dos 1s forwards;
+    animation-delay: 1s;
+    background-color: orange;
+}
+
+@keyframes dos {
+    100%{
+        width: 100%;
+    }
+}
+
+/* tercer cuadrito */
+
+#tres {
+    animation: tres 1s forwards;
+    animation-delay: 2s;
+    background-color: yellow;
+}
+
+@keyframes tres {
+    100%{
+        width: 100%;
+    }
+}
+
+/* cuarto cuadrito */
+
+#cuatro {
+    animation: cuatro 1s forwards;
+    animation-delay: 3s;
+    background-color: aqua;
+}
+
+@keyframes cuatro {
+    100%{
+        width: 100%;
+    }
+}
+
+/* quinto cuadrito */
+
+#cinco {
+    animation: quinto 1s forwards;
+    animation-delay: 4s;
+    background-color: green;
+}
+
+@keyframes quinto {
+    100%{
+        width: 100%;
+    }
+}
 
 
 /**FRUSTRACION**/
