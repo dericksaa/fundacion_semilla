@@ -12,13 +12,29 @@
     --verde_claro: #69BF97;
 }
 
+.S_ORDEN{
+    display: flex;
+}
+
+.DERECHA_SUPERIOR{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.DERECHA_INFERIOR{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
 /**TITULO**/
 
 
 /**FOTO ESTUDIANTE**/
 .a_container{
 	padding: 30px;
-	width: 150px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -178,7 +194,6 @@
 .columna{
     display: flex;
     justify-content: flex-start;
-    margin-top: 400px;
     left: -40px;
 }
 
@@ -286,7 +301,7 @@
 	height: 100%;
 	top:100%;
 	left: 0;
-  }
+}
 
 .a_term1:hover::before{
 	background-color: rgb(45, 114, 24);
@@ -354,7 +369,7 @@
 .a_cara1:hover + .a_tranqui {
 	display:flex;
 	flex-direction: unset;
-  }
+}
 
 .a_cara2{
 	width: 30px;
@@ -392,6 +407,13 @@
 }
 
 /**ENOJO**/
+
+s_enojo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 .circulo_s{
     display: flex;
