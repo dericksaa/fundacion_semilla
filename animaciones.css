@@ -25,14 +25,12 @@
 .columna{
     display: flex;
     justify-content: flex-start;
-    
     margin-top: 400px;
     left: -40px;
 }
 
 .frustracion{
     margin: 30px 30px;
-
     width: 300px;
     border: 1px solid #ccc;
     padding: 10px;
