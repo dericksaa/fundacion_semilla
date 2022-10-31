@@ -174,7 +174,7 @@
   }
 
 .a_term1:hover::before{
-	background-color: rgb(45, 114, 24);
+	background-color: rgb(71, 207, 29);
 	top:0;
 }
 
@@ -217,6 +217,16 @@
 	border: solid 2px;
 }
 
+.a_lineas{
+	margin-top: -7px;
+	margin-left: -25px;
+	margin-right: 25px;
+}
+.a_lineas p{
+	margin-top: 23px;
+}
+
+
 .a_caritas{
 	display: flex;
 	flex-direction: column;
@@ -229,7 +239,11 @@
     border-radius: 50%;
 	margin-top: 15px;
 	border: solid 3px;
-	background-color: rgb(45, 114, 24);
+	background-color: rgb(71, 207, 29);
+}
+
+.a_cara1:hover{
+    transform: scale(1.5, 1.5);
 }
 
 .a_tranqui{
@@ -249,6 +263,11 @@
 	margin-top: 15px;
 	border: solid 3px;
 }
+
+.a_cara2:hover{
+    transform: scale(1.5, 1.5);
+}
+
 .a_cara3{
 	width: 30px;
     height: 30px;
@@ -256,6 +275,10 @@
 	background-color: rgb(255, 166, 0);
 	margin-top: 15px;
 	border: solid 3px;
+}
+
+.a_cara3:hover{
+    transform: scale(1.5, 1.5);
 }
 
 .a_cara4{
@@ -267,6 +290,10 @@
 	border: solid 3px;
 }
 
+.a_cara4:hover{
+    transform: scale(1.5, 1.5);
+}
+
 .a_cara5{
 	width: 30px;
     height: 30px;
@@ -276,6 +303,9 @@
 	border: solid 3px;
 }
 
+.a_cara5:hover{
+    transform: scale(1.5, 1.5);
+}
 /**ENOJO**/
 
 
