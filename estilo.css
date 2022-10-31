@@ -17,9 +17,7 @@
     flex-direction: column;
 } 
 
-.container{
-    width: 1350px;
-}
+
 .container ul{
     padding: 10px 30px;
     display: flex;
