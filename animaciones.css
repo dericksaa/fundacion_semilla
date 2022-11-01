@@ -321,31 +321,77 @@
 	height: 100%;
 	top:100%;
 	left: 0;
-}
+  }
 
 .a_term1:hover::before{
-	background-color: rgb(45, 114, 24);
+	background-color: rgb(207, 29, 29);
 	top:0;
+}
+
+.a_term2_v{
+	width:20px;
+	height:40px;
+	border: solid 2px;
+    background-color: rgb(255, 166, 0);
 }
 
 .a_term2{
 	width:20px;
 	height:40px;
-	background-color: rgb(255, 238, 0);
+	background-color: rgb(255, 166, 0);
+    animation: mi2 3s forwards;
+    animation-delay: 9s;
+}
+
+@keyframes mi2{
+    100%{
+        width: 100%;
+        height:0%;
+        background: rgb(255, 255, 255);
+    }
+
+    0%{
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+    }
+}
+
+.a_term3_v{
+	width:20px;
+	height:40px;
+	background-color: rgb(255, 251, 0);
 	border: solid 2px;
 }
 
 .a_term3{
 	width:20px;
 	height:40px;
-	background-color: rgb(255, 166, 0);
+	background-color: rgb(255, 251, 0);
+	animation: mi2 4s forwards;
+    animation-delay: 6s;
+}
+
+
+.a_term4_v{
+	width:20px;
+	height:40px;
+	background-color: rgb(0, 183, 255);
 	border: solid 2px;
 }
 
 .a_term4{
 	width:20px;
 	height:40px;
-	background-color: rgb(0, 183, 255);
+    background-color: rgb(0, 183, 255);
+	animation: mi2 3s forwards;
+    animation-delay: 3s;
+}
+
+.a_term5_v{
+	width:20px;
+	height:40px;
+	background-color: blue;
 	border: solid 2px;
 }
 
@@ -353,7 +399,7 @@
 	width:20px;
 	height:40px;
 	background-color: blue;
-	border: solid 2px;
+	animation: mi2 3s forwards;
 }
 
 .a_term6{
@@ -367,6 +413,17 @@
 	border: solid 2px;
 }
 
+
+.a_lineas{
+	margin-top: -7px;
+	margin-left: -25px;
+	margin-right: 25px;
+}
+.a_lineas p{
+	margin-top: 23px;
+}
+
+
 .a_caritas{
 	display: flex;
 	flex-direction: column;
@@ -379,33 +436,37 @@
     border-radius: 50%;
 	margin-top: 15px;
 	border: solid 3px;
-	background-color: rgb(45, 114, 24);
+	background-color:rgb(207, 29, 29);
 }
 
-.a_tranqui{
-	display: none;
-}
-
-.a_cara1:hover + .a_tranqui {
-	display:flex;
-	flex-direction: unset;
+.a_cara1:hover{
+    transform: scale(1.5, 1.5);
 }
 
 .a_cara2{
 	width: 30px;
     height: 30px;
     border-radius: 50%;
-	background-color: rgb(255, 238, 0);
+	background-color: rgb(255, 166, 0);
 	margin-top: 15px;
 	border: solid 3px;
 }
+
+.a_cara2:hover{
+    transform: scale(1.5, 1.5);
+}
+
 .a_cara3{
 	width: 30px;
     height: 30px;
     border-radius: 50%;
-	background-color: rgb(255, 166, 0);
+	background-color: rgb(255, 251, 0);
 	margin-top: 15px;
 	border: solid 3px;
+}
+
+.a_cara3:hover{
+    transform: scale(1.5, 1.5);
 }
 
 .a_cara4{
@@ -417,6 +478,10 @@
 	border: solid 3px;
 }
 
+.a_cara4:hover{
+    transform: scale(1.5, 1.5);
+}
+
 .a_cara5{
 	width: 30px;
     height: 30px;
@@ -424,6 +489,10 @@
 	background-color: blue;
 	margin-top: 15px;
 	border: solid 3px;
+}
+
+.a_cara5:hover{
+    transform: scale(1.5, 1.5);
 }
 
 /**ENOJO**/
