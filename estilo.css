@@ -247,6 +247,20 @@ a{
 
 /**LISTA**/
 
+h2{
+    font-family: var(--titulos);
+    font-size: 40px;
+    color: var(--verde_oscuro);
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+@media(max-width:522px){
+    h2{
+        font-size: 30px;
+    }
+}
+
 .s_lista{
     display: flex;
 }
@@ -254,12 +268,11 @@ a{
 /* estudiantes */
 
 .a_dip1_users_list{
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    justify-content: center;
 }
 
 .a_elem_dip1{

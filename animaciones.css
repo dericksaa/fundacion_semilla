@@ -21,7 +21,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 1%;
 }
 
 @media(max-width:850px){
@@ -36,7 +36,7 @@
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 9%;
 }
 
 @media(max-width:1180px){
@@ -54,6 +54,19 @@
 
 /**TITULO**/
 
+h2{
+    font-family: var(--titulos);
+    font-size: 40px;
+    color: var(--verde_oscuro);
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+@media(max-width:522px){
+    h2{
+        font-size: 30px;
+    }
+}
 
 /**FOTO ESTUDIANTE**/
 .a_container{
@@ -64,6 +77,11 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.a_container h3{
+    padding-top: 30px;
+}
+
 .a_img_perfil_anim{
 	width: 200px;
 	height: 200px;
@@ -109,6 +127,7 @@
     font-family: var(--titulos);
     font-size: 40px;
     font-weight: 400;
+    color: black;
 }
 
 .s_indi_global h3{
@@ -223,13 +242,12 @@
 
 .frustracion{
     width: 300px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 10px;
     font-family: var(--textos);
 }
-.frustracion h2{
+.frustracion h3{
     text-align: center;
-
 }
 .container{
     width: 100%;
@@ -252,22 +270,22 @@
 .marzo{
     
     background-color: #04aa6d;
-    animation: fillmarzo 2s forwards;
+    animation: fillmarzo 4s forwards;
 }
 .junio{
     
     background-color: #2196f3;
-    animation: filljunio 2s forwards;
+    animation: filljunio 4s forwards;
 }
 .agosto{
     
     background-color: #f4e736;
-    animation: fillagosto 2s forwards;
+    animation: fillagosto 4s forwards;
 }
 .noviembre{
     
     background-color: #f44336;
-    animation: fillnov 2s forwards;
+    animation: fillnov 4s forwards;
 }
 @keyframes fillmarzo{
     0%{width: 0;}
@@ -287,11 +305,16 @@
 }
 
 /**MIEDO**/
+
+.s_miedo h3{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
 .a_indicador_miedo{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    padding-bottom: 40px;
 
 }
 
@@ -517,6 +540,7 @@
 
 .s_enojo{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -557,6 +581,8 @@
 
 .circulo_s p{
     transform: rotate(-45deg);
+    font-family: var(--textos);
+    font-size: 30px;
 }
 
 
@@ -588,7 +614,7 @@
     height: 80px;
     background-color: black;
     position: absolute;
-    bottom: 40px;
+    bottom: 70px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -622,7 +648,7 @@
     justify-content: space-between;
 }
 
-.s_texto h3{
+h3{
     font-family: var(--titulos);
     font-size: 30px;
 }
