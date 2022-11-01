@@ -10,6 +10,7 @@
     --titulos: 'Dosis', sans-serif;
     --verde_oscuro: #009458;
     --verde_claro: #69BF97;
+    --ancho: 100px;
 }
 .contenido{
     display: flex;
@@ -137,19 +138,22 @@ a{
 }
  
 
-/* aqui va el menu*/
+/**aqui va el menu**/
 
 .contenido-menu{
-    display: flex;
-    
-
+    display: grid;
+    grid: 1fr / max-content 1fr; 
 }
 
+:root:has(.o-navegacion:hover){
+    --ancho:100px;
+}
 /*Coloque posicion general en en el contenedor*/
 .menu_C{
-    width: 100px;
+    width: var(--ancho);
     height: 100vh;
     background-color: black;
+    transition: all 0.3s ease;
 }
 
 /*en la seccion del menu se colocaron elementos de iconos*/
@@ -169,12 +173,18 @@ a{
     border: 1px;
 }
 
+@media (max-width: 425px){
+    .footer_C{
+        flex-direction: column-reverse;
+    }
 
-/*Media queries de vaeln */
+    :root{
+        --ancho:0;
+    }
+}
 
 
-
-/* aqui va el footer */
+/**aqui va el footer **/
 
 /*Elemento general del contenedor footer*/
 
@@ -236,6 +246,10 @@ a{
 
 
 /**LISTA**/
+
+.s_lista{
+    display: flex;
+}
 
 /* estudiantes */
 

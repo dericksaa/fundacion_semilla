@@ -32,6 +32,7 @@
 
 .DERECHA_INFERIOR{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
@@ -217,6 +218,7 @@
 .columna{
     display: flex;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .frustracion{
@@ -289,6 +291,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    padding-bottom: 40px;
 
 }
 
@@ -502,6 +505,8 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
+
 }
 
 .circulo_s{
@@ -544,7 +549,8 @@
 
 .s_medidor{
     width: 100%;
-    padding: 10px 10px;
+    padding: 0px 10px;
+    padding-bottom: 40px;
     position: relative;
     display: flex;
     flex-direction: column;
