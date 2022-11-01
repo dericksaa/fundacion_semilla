@@ -339,11 +339,10 @@
 }
 
 .a_term2{
-	width:20px;
+	width:15px;
 	height:40px;
-	background-color: rgb(255, 166, 0);
     animation: mi2 3s forwards;
-    animation-delay: 9s;
+    animation: mi2 3s backwards 9s;
 }
 
 @keyframes mi2{
@@ -368,11 +367,10 @@
 }
 
 .a_term3{
-	width:20px;
+	width:15px;
 	height:40px;
 	background-color: rgb(255, 251, 0);
-	animation: mi2 4s forwards;
-    animation-delay: 6s;
+	animation: mi2 3s backwards 6s;
 }
 
 
@@ -384,11 +382,10 @@
 }
 
 .a_term4{
-	width:20px;
+	width:15px;
 	height:40px;
     background-color: rgb(0, 183, 255);
-	animation: mi2 3s forwards;
-    animation-delay: 3s;
+	animation: mi2 3s backwards 3s;
 }
 
 .a_term5_v{
@@ -434,6 +431,9 @@
 }
 
 .a_cara1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -442,11 +442,17 @@
 	background-color:rgb(207, 29, 29);
 }
 
+.a_caritas img{
+    width: 80%;
+}
 .a_cara1:hover{
     transform: scale(1.5, 1.5);
 }
 
 .a_cara2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -460,6 +466,9 @@
 }
 
 .a_cara3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -473,6 +482,9 @@
 }
 
 .a_cara4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -486,6 +498,9 @@
 }
 
 .a_cara5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -497,6 +512,7 @@
 .a_cara5:hover{
     transform: scale(1.5, 1.5);
 }
+
 /**ENOJO**/
 
 .s_enojo{
