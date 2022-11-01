@@ -338,7 +338,6 @@
 .a_term2{
 	width:15px;
 	height:40px;
-    animation: mi2 3s forwards;
     animation: mi2 3s backwards 9s;
 }
 
