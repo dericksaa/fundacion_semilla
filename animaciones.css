@@ -19,6 +19,15 @@
 .DERECHA_SUPERIOR{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+@media(max-width:850px){
+    .DERECHA_SUPERIOR{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .DERECHA_INFERIOR{
@@ -26,7 +35,21 @@
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
 }
+
+@media(max-width:1180px){
+    .DERECHA_INFERIOR{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:744px){
+    .DERECHA_INFERIOR{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 /**TITULO**/
 
@@ -193,12 +216,10 @@
 /**FRUSTRACION**/
 .columna{
     display: flex;
-    justify-content: flex-start;
-    left: -40px;
+    justify-content: center;
 }
 
 .frustracion{
-    margin: 30px 30px;
     width: 300px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -223,7 +244,6 @@
     .frustracion{
         width: 250px;
         padding: 10px 20px;
-       
     }
 }
 
@@ -408,7 +428,7 @@
 
 /**ENOJO**/
 
-s_enojo{
+.s_enojo{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -429,6 +449,21 @@ s_enojo{
     -webkit-border-radius: 100%;
     border-radius: 100%;
     transform: rotate(45deg);
+    animation-name: circulo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes circulo {
+
+    0%{
+        border-top: 25px solid #d9534f;
+    }
+    100%{
+        border-top: 25px solid #428bca;
+    }
+
 }
 
 .circulo_s p{
@@ -439,8 +474,8 @@ s_enojo{
 /**TRISTEZA Y ALEGRIA**/
 
 .s_medidor{
-    width: 400px;
-    padding: 30px 30px;
+    width: 100%;
+    padding: 10px 10px;
     position: relative;
     display: flex;
     flex-direction: column;
